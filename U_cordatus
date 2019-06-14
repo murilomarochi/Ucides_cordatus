@@ -48,7 +48,7 @@ years= 1982:2018
 year.ind=1:37
 file.name= paste("sst.day.mean.", years[year.ind],".nc", sep="")
 
-#load data for 1 year
+#load data for 37 years
 sst<-nc_open(file.name)
 print(sst)
 
@@ -93,7 +93,7 @@ lats= lats[lats.sel]
 #update temp data to subset
 temp=temp.sub2
 
-#--------------
+#--------------### I have problems here
 #make arrays for output
 #development
 devel.out= array(NA, dim=c(length(years),length(lons),length(lats),length(times2)))
