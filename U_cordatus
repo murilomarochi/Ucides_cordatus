@@ -93,7 +93,6 @@ lats= lats[lats.sel]
 #update temp data to subset
 temp=temp.sub2
 
-#--------------### I have problems here
 #make arrays for output
 #development
 devel.out= array(NA, dim=c(length(years),length(lons),length(lats),length(times2)))
